@@ -13,6 +13,7 @@ export default class Content extends Component {
           avatar="https://unsplash.it/50/50?image=1012"
           image="https://unsplash.it/400/300?image=1060"
           title="Home to unique ideas from the world’s smart minds."
+          animate="shake"
         />
         <Card
           name="Andy"
@@ -20,6 +21,7 @@ export default class Content extends Component {
           avatar="https://unsplash.it/50/50?image=1033"
           image="https://unsplash.it/400/300?image=888"
           title="To be or not to be..."
+          animate="jello"
         />
       </div>
     );
