@@ -1,5 +1,6 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
 import 'font-awesome/css/font-awesome.min.css';
 import './Card.less';
 
@@ -7,24 +8,31 @@ import './Card.less';
 // npm install react-fontawesome font-awesome
 
 export default class Card extends React.Component {
+  static propTypes = {
+    name: PropTypes.string,
+    avatar: PropTypes.string,
+    image: PropTypes.string,
+    time: PropTypes.string,
+    title: PropTypes.string,
+  }
   render() {
     return (
       <div className="card">
         <div className="cardHeader">
-          <img className="avatar" src="https://unsplash.it/50/50?image=1011" alt="hyman" />
+          <img className="avatar" src={this.props.avatar} alt="userAvatar" />
           <div className="userInfo">
             <div className="name">
-              Hyman
+              {this.props.name}
               <span> shared</span>
             </div>
             <div className="time">
-              100 minutes ago
+              {this.props.time} minutes ago
             </div>
           </div>
           <button>Click me</button>
         </div>
-        <h2>Home to unique ideas from the world’s smart minds.</h2>
-        <img className="cardImg" src="https://unsplash.it/400/300?image=1060" alt="titleimagte" />
+        <h2>{this.props.title}</h2>
+        <img className="cardImg" src={this.props.image} alt="titleimagte" />
         <div className="footer">
           <FontAwesome name="commenting-o" />
           <FontAwesome name="thumbs-o-up" />
