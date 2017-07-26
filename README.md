@@ -1,6 +1,10 @@
-# Simple React Start Kit 2017
+# tutorial props
 
-這個環境包可以讓你快速體驗 ReactJS 開發環境的便利，我們並沒有在裏面放入太多套件(例如 redux, karma)，希望可以讓你用最簡單的環境開始學習 React
+教你怎麼抽出元件，然後從外面把數值傳入元件內，搭配一個卡片的範例，很簡單懂的
+
+![Imgur](http://i.imgur.com/2CjnmJi.gif)
+
+## [DEMO](https://reactmaker.github.io/tutorial_props/#/)
 
 ## 特色
 
@@ -9,6 +13,8 @@
 * [webpack 2](https://github.com/webpack/webpack)
 * [babel stage-0 ](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
+* [react-fontawesome](https://github.com/danawoodman/react-fontawesome)
+* [animate.css](https://daneden.github.io/animate.css/)
 
 ## 需求配置
 * node `^4.5.0`
